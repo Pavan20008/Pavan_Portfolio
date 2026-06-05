@@ -154,9 +154,37 @@ h1.hero-name span{background:var(--g1);-webkit-background-clip:text;-webkit-text
 .stag:hover{background:rgba(0,180,255,.07);border-color:rgba(0,180,255,.26);color:var(--a);transform:translateY(-1px)}
 .tech-galaxy{position:relative;height:500px;margin-bottom:3rem;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .center-core{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#00b4ff);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:700;color:#fff;box-shadow:0 0 60px rgba(124,58,237,.7);z-index:10;position:relative;flex-shrink:0}
-.tech-pills-wrap{position:absolute;inset:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.6rem;padding:2rem;pointer-events:none}
-.tech-pill{padding:.3rem .75rem;background:rgba(0,180,255,.07);border:1px solid rgba(0,180,255,.18);border-radius:100px;font-size:.72rem;color:var(--text2);font-weight:500;pointer-events:all;transition:all .2s;cursor:none}
-.tech-pill:hover{border-color:var(--a);color:var(--a);transform:scale(1.08)}
+.tech-galaxy{
+    width:600px;
+    height:600px;
+    margin:0 auto;
+    position:relative;
+}
+
+.tech-pills-wrap{
+    position:absolute;
+    inset:0;
+}
+
+.tech-icon{
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,180,255,.08);
+    border:1px solid rgba(0,180,255,.25);
+    color:#00b4ff;
+    font-size:2rem;
+    transition:0.3s;
+}
+
+.tech-icon:hover{
+    transform:scale(1.15);
+    box-shadow:0 0 25px rgba(0,180,255,.5);
+}
 .timeline{position:relative;padding-left:2rem}
 .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent 0%,var(--a) 20%,var(--a2) 80%,transparent 100%)}
 .tl-item{position:relative;margin-bottom:1.8rem;padding:1.4rem}
