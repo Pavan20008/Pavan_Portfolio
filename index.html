@@ -145,18 +145,42 @@ h1.hero-name span{background:var(--g1);-webkit-background-clip:text;-webkit-text
 .stat-label{font-size:.65rem;color:var(--text3);font-weight:500;letter-spacing:.4px}
 .about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:20px}
 .about-overlay{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:20px;background:linear-gradient(to top,rgba(0,0,0,.95),rgba(0,0,0,.4),transparent);text-align:center}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.skill-cat{padding:1.35rem}
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(280px,1fr));
+    gap:24px;
+    margin-top:50px;
+    align-items:stretch;
+}
+.skill-cat{
+    padding:1.35rem;
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
 .skill-cat-title{font-size:.66rem;font-weight:700;color:var(--a);letter-spacing:2px;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.4rem}
 .skill-cat-title::before{content:'';width:10px;height:1.5px;background:var(--a);border-radius:2px;flex-shrink:0}
-.skill-tags{display:flex;flex-wrap:wrap;gap:.32rem}
-.stag{padding:.22rem .52rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:5px;font-size:.69rem;color:var(--text2);transition:all .18s;cursor:none}
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:12px;
+}
+.stag{
+    padding:8px 12px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:8px;
+    font-size:0.8rem;
+    color:var(--text2);
+}
 .stag:hover{background:rgba(0,180,255,.07);border-color:rgba(0,180,255,.26);color:var(--a);transform:translateY(-1px)}
 .tech-galaxy{
     position:relative;
-    width:600px;
-    height:600px;
-    margin:0 auto 3rem;
+    width:500px;
+    height:280px;
+    margin:0 auto 70px;
 }
 .center-core{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#00b4ff);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:700;color:#fff;box-shadow:0 0 60px rgba(124,58,237,.7);z-index:10;position:relative;flex-shrink:0}
 .tech-galaxy{
