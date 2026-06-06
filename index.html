@@ -277,7 +277,26 @@ h1.hero-name span{background:var(--g1);-webkit-background-clip:text;-webkit-text
 .ach-title{font-size:.84rem;font-weight:700;color:var(--text);margin-bottom:.24rem}
 .ach-sub{font-size:.71rem;color:var(--text2);line-height:1.55}
 .edu-card{padding:1.9rem 2.2rem;display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap}
-.edu-logo{width:70px;height:70px;flex-shrink:0;border-radius:12px;background:linear-gradient(135deg,rgba(0,180,255,.14),rgba(124,58,237,.14));border:1px solid var(--border-h);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;color:var(--a)}
+.edu-logo{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+    border-radius:12px;
+    background:#ffffff;
+    border:1px solid var(--border-h);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    padding:5px;
+}
+
+.edu-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
 .edu-info{flex:1;min-width:180px}
 .edu-institution{font-size:1.02rem;font-weight:700;color:var(--text);margin-bottom:.25rem;line-height:1.35}
 .edu-degree{font-size:.83rem;color:var(--a);margin-bottom:.18rem}
